@@ -45,7 +45,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    def room_version = "2.2.1"
+    def room_version = "2.2.5"
     def kodein_version = "6.4.0"
     def lifecycle_version = "2.0.0"
 
