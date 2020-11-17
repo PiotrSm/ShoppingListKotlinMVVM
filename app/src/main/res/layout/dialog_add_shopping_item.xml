@@ -6,13 +6,15 @@
     android:padding="16dp"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/teal_700">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add new shopping item"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,10 +28,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Name"
+        android:textColorHint="@color/white"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/etAmount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/etAmount"
@@ -37,7 +41,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:hint="Amount"
+        android:textColorHint="@color/white"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
@@ -50,6 +56,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="ADD"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/tvCancel"
         app:layout_constraintTop_toBottomOf="@+id/etAmount" />
@@ -62,6 +69,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="CANCEL"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAmount" />

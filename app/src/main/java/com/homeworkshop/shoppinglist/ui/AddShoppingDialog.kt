@@ -18,7 +18,7 @@ class AddShoppingDialog(context: Context,var addDialogListener: AddDialogListene
         tvAdd.setOnClickListener{
             val name = etName.text.toString()
             val amount = etAmount.text.toString()
-            if(name.isEmpty() && amount.isEmpty()){
+            if(name.isNullOrEmpty()){
                 Toast.makeText(context,"Please enter all the information",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
